@@ -1,0 +1,10 @@
+import unittest
+class TestCase1(unittest.TestCase):
+	def setUp(self):
+		print('TestCase1:setUp executed..')
+	def test1(self):
+		print('TestCase1:test1 executed..')
+	def test2(self):
+		print('TestCase1:test2 executed..')
+	def tearDown(self):
+		print('TestCase1:tearDown executed..')

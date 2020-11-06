@@ -1,0 +1,13 @@
+from selenium import webdriver
+driver=webdriver.Firefox(executable_path='E:\Library\geckodriver.exe')
+driver.get('https://www.facebook.com/')
+print('Title:',driver.title)
+print('Current Page URL:',driver.current_url)
+driver.get('http://durgasoftvideos.com/')
+print('Title:',driver.title)
+print('Current Page URL:',driver.current_url)
+driver.back()
+print('After Back current URL:',driver.current_url)
+driver.forward()
+print('After Forward current URL:',driver.current_url)
+driver.close()
